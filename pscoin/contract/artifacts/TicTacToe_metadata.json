@@ -1,0 +1,65 @@
+{
+	"compiler": {
+		"version": "0.8.24+commit.e11b9ed9"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "uint8[3][3]",
+						"name": "board",
+						"type": "uint8[3][3]"
+					}
+				],
+				"name": "isWinning",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Cau1.sol": "TicTacToe"
+		},
+		"evmVersion": "shanghai",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Cau1.sol": {
+			"keccak256": "0xf470d62020bcd0addead4ec474625fc87b93d7d9c389066cc80402a002906cdd",
+			"license": "BUSL-1.1",
+			"urls": [
+				"bzz-raw://111d95153184930727505889a946700b1e9ced50a3b82625048213bf68f355de",
+				"dweb:/ipfs/QmZWkV3LwRGvR1NymF7WHhMXFBLmTK9zohRKZ7FNk6w5sg"
+			]
+		}
+	},
+	"version": 1
+}

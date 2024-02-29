@@ -1,0 +1,142 @@
+{
+	"compiler": {
+		"version": "0.8.24+commit.e11b9ed9"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "user",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					}
+				],
+				"name": "EtherAdded",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "user",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					}
+				],
+				"name": "EtherRemoved",
+				"type": "event"
+			},
+			{
+				"inputs": [],
+				"name": "addEther",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "balances",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					}
+				],
+				"name": "removeEther",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {
+				"addEther()": {
+					"details": "mong muốn nó hoạt động tốt khi thực hiện nhiều lần"
+				},
+				"removeEther(uint256)": {
+					"params": {
+						"amount": "là số lượng muốn rút. Không thể rút nếu vượt quá số dư"
+					}
+				}
+			},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {
+				"addEther()": {
+					"notice": "gửi ether vào contract"
+				},
+				"balances(address)": {
+					"notice": "sử dụng để lưu trữ số dư của người dùng     USER    =>  BALANCE"
+				},
+				"removeEther(uint256)": {
+					"notice": "sử dụng để rút tiền khỏi hợp đồng"
+				}
+			},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Cau1.sol": "BasicBankV2"
+		},
+		"evmVersion": "shanghai",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Cau1.sol": {
+			"keccak256": "0xeb58401e8f48dad9ab2a2ae0ba458b26fe5f88a58ca024473171d9a5bd847d95",
+			"license": "BUSL-1.1",
+			"urls": [
+				"bzz-raw://7ec85e58795a86b96eb0a3df63f1f12f95a5f2b836c27fdd3fd5622f5c71ec8b",
+				"dweb:/ipfs/QmdeFS1CZJYwZvQ3KfW6AsFn19Kme4DqBJptYKM226YVqV"
+			]
+		}
+	},
+	"version": 1
+}
